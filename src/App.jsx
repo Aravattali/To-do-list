@@ -1,16 +1,27 @@
-import React from 'react'
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React, { useState } from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import './App.css'
+import Login from './components/Login/Login'
+import Home from './components/Home/Home'
+import Preferences from './components/Preferences/Preferences'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+const [token , setToken] = useState();
+if(!token){
+  return < Login setToken={setToken}/>
+}
   return (
-    <>
-      <h1 className='bg-[#4DBAF8FF] p-4"'>Welcome</h1>
-    </>
+    <div className='path'>
+      <h2>Welcome</h2>
+      <BrowserRouter>
+        <Routes>
+
+          <Route path="/home" element={<Home />} />
+          <Route path="/preferences" element={<Preferences />} />
+
+        </Routes>
+      </BrowserRouter>
+    </div>
   )
 }
 
