@@ -1,4 +1,48 @@
 # React + Vite
+# 📝 To-Do List App
+
+This is a simple React-based To-Do List application with login functionality, where users can add, view, edit, and delete tasks.
+
+---
+
+## 🔐 Login Credentials
+
+To access the dashboard, use the following credentials:
+
+- **Username**: `admin`  
+- **Password**: `123`
+
+---
+
+## 🚀 Features
+
+### ✅ Login
+- Basic login form with fixed credentials.
+- If the user enters the wrong credentials, they won’t be allowed to access the dashboard.
+
+### 🧾 Add Task
+- Enter a new task in the input field.
+- Click **"Add Task"** to save it in your task list.
+
+### 👁️ View/Hide Tasks
+- Click the **"View Tasks"** button to show or hide your task list.
+
+### ✏️ Edit Task
+- Click the **"Edit"** button next to a task to modify its content.
+- Click **"Save"** after editing.
+
+### 🗑️ Delete Task
+- Click the **"Delete"** button to remove a task from the list.
+
+---
+
+## 🛠️ Tech Stack
+
+- **React** (Functional Components + Hooks)
+- **JavaScript**
+- **HTML/CSS**
+
+---
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
